@@ -6,7 +6,7 @@ def index():
     titolo="Pagina iniziale"
     bottone="Info"
     testo="Hello World"
-    return render_template("base.html", 
+    return render_template("index.html", 
         titolo=titolo,
         testo=testo,
         bottone=bottone)
@@ -14,12 +14,10 @@ def index():
 @app.route('/info')
 def info():
     titolo="Pagina Info"
-    bottone="Homepage"
     testo="Informazioni"
     return render_template("base.html", 
         titolo=titolo,
         testo=testo,
-        bottone=bottone)
 
 if __name__ == '__main__':
     app.run()
