@@ -15,9 +15,9 @@ def index():
 def info():
     titolo="Pagina Info"
     testo="Informazioni"
-    return render_template("base.html", 
+    return render_template("info.html", 
         titolo=titolo,
-        testo=testo,
+        testo=testo)
 
 if __name__ == '__main__':
     app.run()
